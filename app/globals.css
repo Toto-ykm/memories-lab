@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+  --font-serif: "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+  --background: #fbf7ee;
+  --foreground: #352c23;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--foreground);
+  background:
+    linear-gradient(180deg, rgba(251, 247, 238, 0.96), rgba(245, 235, 219, 0.96)),
+    #fbf7ee;
+  font-family: var(--font-sans);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  color: #fffaf0;
+  background: #a77a3f;
+}
+
+.gold-line {
+  background: linear-gradient(90deg, transparent, #d8bf83, transparent);
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title desc">
+  <title id="title">ファミリーストーリーブック</title>
+  <desc id="desc">写真と言葉をまとめるブック型ギフトの仮商品画像。</desc>
+  <rect width="900" height="675" fill="#fbf7ee"/>
+  <path d="M185 120h265c55 0 88 20 105 60v390c-22-30-58-45-105-45H185z" fill="#fffaf0" stroke="#d8bf83" stroke-width="8"/>
+  <path d="M555 180c17-40 50-60 105-60h55v405h-55c-47 0-83 15-105 45z" fill="#efe3cf" stroke="#d8bf83" stroke-width="8"/>
+  <rect x="240" y="190" width="225" height="145" rx="8" fill="#c8aa70"/>
+  <circle cx="325" cy="255" r="34" fill="#78806b"/>
+  <path d="M265 310c38-46 83-58 135-36 30 13 52 28 65 36v25H265z" fill="#fffaf0" opacity=".75"/>
+  <rect x="245" y="385" width="235" height="12" rx="6" fill="#584735" opacity=".26"/>
+  <rect x="245" y="420" width="180" height="12" rx="6" fill="#584735" opacity=".18"/>
+</svg>

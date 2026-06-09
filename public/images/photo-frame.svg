@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title desc">
+  <title id="title">メモリアルフォトフレーム</title>
+  <desc id="desc">木製フレームと真鍮プレートの仮商品画像。</desc>
+  <rect width="900" height="675" fill="#f4ead9"/>
+  <rect x="175" y="70" width="550" height="500" rx="16" fill="#8b6742"/>
+  <rect x="220" y="115" width="460" height="370" rx="8" fill="#fffaf0"/>
+  <circle cx="380" cy="276" r="58" fill="#d8bf83"/>
+  <circle cx="470" cy="267" r="72" fill="#78806b" opacity=".82"/>
+  <path d="M270 434c74-95 154-124 238-88 58 25 103 62 132 88v51H270z" fill="#c8aa70"/>
+  <rect x="350" y="520" width="200" height="26" rx="13" fill="#d8bf83"/>
+</svg>

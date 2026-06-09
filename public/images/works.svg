@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" role="img" aria-labelledby="title desc">
+  <title id="title">制作事例の仮ビジュアル</title>
+  <desc id="desc">写真、カード、ギフトボックスを並べた制作事例用の仮画像。</desc>
+  <rect width="1000" height="800" fill="#fbf7ee"/>
+  <rect x="110" y="120" width="360" height="460" rx="14" fill="#fffaf0" stroke="#d8bf83" stroke-width="8"/>
+  <rect x="160" y="170" width="260" height="250" rx="8" fill="#d5bd82"/>
+  <circle cx="258" cy="286" r="44" fill="#78806b" opacity=".7"/>
+  <circle cx="320" cy="286" r="52" fill="#a77a3f" opacity=".45"/>
+  <rect x="185" y="466" width="210" height="12" rx="6" fill="#584735" opacity=".22"/>
+  <rect x="185" y="500" width="150" height="12" rx="6" fill="#584735" opacity=".15"/>
+  <rect x="535" y="185" width="300" height="210" rx="12" fill="#efe3cf" stroke="#d8bf83" stroke-width="6"/>
+  <rect x="585" y="250" width="200" height="18" rx="9" fill="#a77a3f" opacity=".38"/>
+  <rect x="585" y="298" width="150" height="14" rx="7" fill="#584735" opacity=".18"/>
+  <rect x="535" y="450" width="300" height="150" rx="12" fill="#a77a3f" opacity=".75"/>
+  <rect x="670" y="450" width="30" height="150" fill="#d8bf83"/>
+  <rect x="535" y="512" width="300" height="28" fill="#d8bf83"/>
+</svg>

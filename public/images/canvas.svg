@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title desc">
+  <title id="title">アニバーサリーキャンバス</title>
+  <desc id="desc">記念日の写真を飾るキャンバスアートの仮商品画像。</desc>
+  <rect width="900" height="675" fill="#efe3cf"/>
+  <rect x="160" y="80" width="580" height="430" rx="10" fill="#fffaf0" stroke="#d8bf83" stroke-width="12"/>
+  <rect x="215" y="130" width="470" height="300" rx="6" fill="#ead8b8"/>
+  <circle cx="405" cy="272" r="66" fill="#a77a3f" opacity=".55"/>
+  <circle cx="500" cy="268" r="66" fill="#78806b" opacity=".62"/>
+  <path d="M275 394c58-76 124-101 196-75 51 19 95 44 134 75v36H275z" fill="#584735" opacity=".25"/>
+  <rect x="330" y="545" width="240" height="18" rx="9" fill="#a77a3f" opacity=".56"/>
+</svg>

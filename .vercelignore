@@ -1,0 +1,17 @@
+node_modules
+.next
+out
+dist
+.tools
+.pnpm-store
+.pnpm-cache
+.pnpm-data
+.pnpm-home
+.pnpm-state
+.agents
+.codex
+.next-server.log
+preview.html
+preview-server.mjs
+start-preview.vbs
+start-static-preview.vbs
