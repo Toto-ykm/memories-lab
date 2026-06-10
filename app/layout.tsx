@@ -16,33 +16,32 @@ export const metadata: Metadata = {
     "Memories Lab",
     "高級ギフト",
     "家族ギフト",
+    "オーダーメイドギフト",
     "クリスタルブロック",
     "ガラス時計",
-    "ガラスフォトフレーム",
-    "記念品",
-    "オーダーメイドギフト"
+    "出産祝い",
+    "敬老の日"
   ],
   openGraph: {
     title: "Memories Lab | 大切な瞬間を、未来へ残す。",
-    description:
-      "家族の節目を、上質なガラスとクリスタルに刻む高級オーダーメイドギフト。",
+    description: site.description,
     url: site.url,
     siteName: "Memories Lab",
     locale: "ja_JP",
     type: "website",
     images: [
       {
-        url: "/images/hero.svg",
+        url: "/images/products/crystal-block-mockup.png",
         width: 1200,
-        height: 630,
-        alt: "Memories Labの高級家族ギフト"
+        height: 1200,
+        alt: "Memories Labの高級オーダーメイド家族ギフト"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Memories Lab | 高級オーダーメイド家族ギフト",
-    description: "大切な瞬間を、未来へ残す。"
+    description: site.description
   }
 };
 

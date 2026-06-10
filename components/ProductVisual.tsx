@@ -30,7 +30,7 @@ export function ProductVisual({
         <div className="absolute bottom-7 left-7 right-7 rounded-md border border-white/20 bg-[#211914]/55 p-4 text-white backdrop-blur">
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#d8bf83]">{tier}</p>
           <p className="mt-1 font-serif text-xl font-semibold">{name}</p>
-          <p className="mt-2 text-xs text-white/62">上質な商品写真を配置するためのモックアップエリア</p>
+          <p className="mt-2 text-xs text-white/62">商品写真を差し替える前提の高級モックアップエリア</p>
         </div>
       </div>
     </div>

@@ -14,17 +14,11 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
-            className="rounded-full bg-[#a77a3f] px-5 py-2.5 text-white transition hover:bg-[#8c6533]"
-          >
+          <Link href="/contact" className="rounded-full bg-[#a77a3f] px-5 py-2.5 text-white transition hover:bg-[#8c6533]">
             お問い合わせ
           </Link>
         </nav>
-        <Link
-          href={site.lineUrl}
-          className="rounded-full border border-[#a77a3f] px-4 py-2 text-xs font-bold text-[#a77a3f] lg:hidden"
-        >
+        <Link href={site.lineUrl} className="rounded-full border border-[#a77a3f] px-4 py-2 text-xs font-bold text-[#a77a3f] lg:hidden">
           LINE相談
         </Link>
       </div>

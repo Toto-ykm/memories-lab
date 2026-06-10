@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { giftScenes, navItems, site } from "@/lib/site";
+import { giftScenes, navItems, products, site } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -31,16 +31,19 @@ export function Footer() {
             </div>
           </div>
           <div>
+            <p className="font-bold text-[#d8bf83]">商品</p>
+            <div className="mt-4 grid gap-3 text-sm text-white/72">
+              {products.slice(0, 6).map((product) => (
+                <Link key={product.slug} href={`/products/${product.slug}`}>{product.name}</Link>
+              ))}
+            </div>
+          </div>
+          <div>
             <p className="font-bold text-[#d8bf83]">ギフトシーン</p>
             <div className="mt-4 grid gap-3 text-sm text-white/72">
               {giftScenes.slice(0, 6).map((scene) => (
                 <Link key={scene.slug} href={`/gift-scenes/${scene.slug}`}>{scene.title}</Link>
               ))}
-            </div>
-          </div>
-          <div>
-            <p className="font-bold text-[#d8bf83]">法務</p>
-            <div className="mt-4 grid gap-3 text-sm text-white/72">
               <Link href="/legal/terms">利用規約</Link>
               <Link href="/legal/privacy">プライバシーポリシー</Link>
               <Link href="/legal/tokusho">特定商取引法に基づく表記</Link>

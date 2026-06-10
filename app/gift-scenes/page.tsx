@@ -6,10 +6,10 @@ import { giftScenes } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "ギフトシーン",
-  description: "敬老の日、出産祝い、誕生日、結婚記念日、卒園・卒業、父の日、母の日、法人記念品におすすめの高級家族ギフト。",
+  description: "出産祝い、敬老の日、結婚記念日、退職祝い、新築祝い、還暦祝い、法人記念品、卒園卒業記念品におすすめの高級オーダーメイドギフト。",
   openGraph: {
     title: "ギフトシーン | Memories Lab",
-    description: "贈る目的別に、上質なオーダーメイドギフトをご提案します。"
+    description: "贈る目的別に、上質なオーダーメイド家族ギフトをご提案します。"
   }
 };
 
@@ -19,7 +19,7 @@ export default function GiftScenesPage() {
       <PageHero
         eyebrow="GIFT SCENES"
         title="ギフトシーン"
-        lead="家族の節目、季節の贈りもの、法人の記念品まで。目的に合わせて、ふさわしい商品と見せ方をご提案します。"
+        lead="贈る相手や記念日の意味に合わせて、ふさわしい商品と見せ方をお選びいただけます。"
         breadcrumbs={[{ label: "ギフトシーン" }]}
       />
       <section className="px-5 pb-20 sm:px-8 lg:pb-28">

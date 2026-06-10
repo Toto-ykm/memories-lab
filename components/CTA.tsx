@@ -2,8 +2,8 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 
 export function CTA({
-  title = "大切な方へ、品格ある記念の贈りものを。",
-  text = "商品選びや写真の選定から丁寧にご案内します。LINE公式またはメールフォームよりお気軽にご相談ください。"
+  title = "大切な方へ、品格のある記念ギフトを。",
+  text = "商品選び、写真選び、納期の確認まで丁寧にご案内します。LINE公式またはメールフォームよりお気軽にご相談ください。"
 }: {
   title?: string;
   text?: string;
