@@ -4,7 +4,6 @@ export const site = {
   url: "https://memories-lab.example.com",
   description:
     "子どもの成長、家族の笑顔、人生の節目を、世界にひとつだけの高級オーダーメイドギフトとして残すブランドです。",
-  lineUrl: "https://line.me/R/ti/p/@memorieslab",
   mailUrl:
     "mailto:info@lifecraft-lab.com?subject=Memories%20Lab%E3%81%B8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87",
   email: "info@lifecraft-lab.com"
@@ -320,7 +319,7 @@ const detailBase = (product: Product): ProductDetail => ({
   faqs: [
     ["写真はスマートフォンの写真でも使えますか？", "可能です。明るさや解像度を確認し、仕上がりに向く写真を一緒に選びます。"],
     ["メッセージや名前は入れられますか？", "はい。商品に合わせて、名前・日付・短いメッセージを上品に配置できます。"],
-    ["急ぎの相談はできますか？", "可能な範囲で調整します。記念日が近い場合は、LINE公式から早めにご相談ください。"]
+    ["急ぎの相談はできますか？", "可能な範囲で調整します。記念日が近い場合は、info@lifecraft-lab.com へ早めにご相談ください。"]
   ]
 });
 
@@ -403,7 +402,7 @@ export const faqItems: [string, string][] = [
   ["支払い方法は？", "銀行振込またはオンライン決済を想定しています。正式注文時にご案内します。"],
   ["返品はできますか？", "名入れ商品のため、お客様都合の返品はお受けできません。不良や破損は対応します。"],
   ["法人注文はできますか？", "可能です。数量、納期、ロゴ入れ、個別名入れの有無をお知らせください。"],
-  ["LINEで相談できますか？", "はい。写真を送りながら相談したい場合はLINE公式が便利です。"]
+  ["問い合わせ先はどこですか？", "商品についてのご質問、お見積り、ご注文前のご相談は info@lifecraft-lab.com へご連絡ください。"]
 ];
 
 export type SceneArticle = {
@@ -427,7 +426,7 @@ export const sceneArticles: Record<string, SceneArticle> = Object.fromEntries(
       ],
       avoidMistakes: [
         "写真や文字を詰め込みすぎると、記念品ではなく販促品のように見えてしまうことがあります。主役の写真を決め、名前や日付は控えめに添えるのがおすすめです。",
-        "納期が近い場合は、写真選びと文面確認に時間がかかるため、早めの相談が安心です。LINE公式なら写真を送りながら確認できます。"
+        "納期が近い場合は、写真選びと文面確認に時間がかかるため、早めの相談が安心です。商品についてのご質問は info@lifecraft-lab.com へご連絡ください。"
       ],
       faqs: [
         ["おすすめ商品はどれですか？", `迷った場合は、${scene.recommended.map((slug) => products.find((p) => p.slug === slug)?.name).filter(Boolean).join("、")}がおすすめです。`],

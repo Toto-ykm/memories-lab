@@ -9,7 +9,7 @@ const ranking = ["crystal-glass", "glass-clock", "glass-photo-frame", "beer-mug"
 
 const flow = [
   ["01", "商品を選ぶ", "用途や価格帯から、候補商品を確認します。"],
-  ["02", "LINEで相談", "写真、納期、贈る相手を共有いただきます。"],
+  ["02", "メールで相談", "写真、納期、贈る相手についてメールでご相談いただけます。"],
   ["03", "見せ方を提案", "文字量や写真の配置を整えた案をご確認いただきます。"],
   ["04", "制作・お届け", "ギフトとして美しく届く状態で仕上げます。"]
 ];
@@ -17,7 +17,7 @@ const flow = [
 const promises = [
   "写真を詰め込みすぎず、余白と素材感で品よく見せます。",
   "家族向け、祖父母向け、法人向けで文面と見せ方を変えます。",
-  "LINEで写真を送りながら、初めての方にもわかりやすく進めます。"
+  "メールで内容を確認しながら、初めての方にもわかりやすく進めます。"
 ];
 
 export default function Home() {
@@ -47,8 +47,8 @@ export default function Home() {
               <Link href="/products" className="inline-flex items-center justify-center rounded-full bg-[#d8bf83] px-8 py-4 text-sm font-bold text-[#211914] shadow-soft transition hover:bg-[#efd79a]">
                 商品を見る
               </Link>
-              <Link href={site.lineUrl} className="inline-flex items-center justify-center rounded-full border border-white/70 px-8 py-4 text-sm font-bold text-white transition hover:bg-white hover:text-[#352c23]">
-                LINEで相談する
+              <Link href="/contact" className="inline-flex items-center justify-center rounded-full border border-white/70 px-8 py-4 text-sm font-bold text-white transition hover:bg-white hover:text-[#352c23]">
+                メールでお問い合わせ
               </Link>
             </div>
             <div className="mt-12 grid max-w-2xl grid-cols-3 gap-px overflow-hidden rounded-lg border border-white/15 bg-white/15 text-center backdrop-blur-sm">

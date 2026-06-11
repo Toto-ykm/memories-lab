@@ -4,21 +4,21 @@ import { PageHero } from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "ご利用ガイド",
-  description: "Memories Labの注文方法、写真提出方法、制作フロー、発送までの流れ。",
+  description: "Memories Labの注文方法、写真提出方法、制作フロー、発送までの流れをご案内します。",
   openGraph: {
     title: "ご利用ガイド | Memories Lab",
-    description: "高級オーダーメイド家族ギフトのご注文からお届けまで。"
+    description: "高級オーダーメイド家族ギフトのご相談からお届けまでの流れをご案内します。"
   }
 };
 
 const guides = [
   {
     title: "注文方法",
-    text: "商品ページまたはお問い合わせページから、LINE公式・メールフォームでご相談ください。用途、納期、ご希望商品を伺います。"
+    text: "商品ページまたはお問い合わせページから、メールでご相談ください。用途、納期、ご希望商品を伺い、最適な進め方をご案内します。"
   },
   {
     title: "写真提出方法",
-    text: "スマートフォン写真、スキャン画像、クラウド共有などに対応します。画質を確認し、最適な写真を一緒に選びます。"
+    text: "スマートフォン写真、スキャン画像、クラウド共有、メール添付などに対応します。画質を確認し、最適な写真を一緒に選びます。"
   },
   {
     title: "制作フロー",
@@ -36,7 +36,7 @@ export default function GuidePage() {
       <PageHero
         eyebrow="GUIDE"
         title="ご利用ガイド"
-        lead="初めての方にも安心してご注文いただけるよう、相談からお届けまでの流れを丁寧にご案内します。"
+        lead="初めての方にも安心してご注文いただけるよう、ご相談からお届けまでの流れを丁寧にご案内します。"
         breadcrumbs={[{ label: "ご利用ガイド" }]}
       />
       <section className="px-5 pb-20 sm:px-8 lg:pb-28">

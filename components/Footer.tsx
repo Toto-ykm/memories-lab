@@ -8,12 +8,10 @@ export function Footer() {
         <div>
           <p className="font-serif text-2xl font-semibold tracking-[0.08em]">{site.name}</p>
           <p className="mt-4 max-w-sm leading-7 text-white/72">{site.tagline}</p>
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-            <Link href={site.lineUrl} className="rounded-full bg-[#d8bf83] px-5 py-3 text-center text-sm font-bold text-[#2f261f]">
-              LINE公式
-            </Link>
-            <Link href="/contact" className="rounded-full border border-white/35 px-5 py-3 text-center text-sm font-bold">
-              メールフォーム
+          <p className="mt-5 text-sm font-bold text-[#d8bf83]">info@lifecraft-lab.com</p>
+          <div className="mt-6">
+            <Link href="/contact" className="rounded-full bg-[#d8bf83] px-5 py-3 text-center text-sm font-bold text-[#2f261f]">
+              メールでお問い合わせ
             </Link>
           </div>
         </div>

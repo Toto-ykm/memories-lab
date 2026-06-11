@@ -75,11 +75,8 @@ export default async function ProductDetailPage({
               {detail.emotional}
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href={site.lineUrl} className="rounded-full bg-[#a77a3f] px-8 py-4 text-center text-sm font-bold text-white">
-                LINEで相談する
-              </Link>
-              <Link href="/contact" className="rounded-full border border-[#a77a3f] px-8 py-4 text-center text-sm font-bold text-[#a77a3f]">
-                メールフォームへ
+              <Link href="/contact" className="rounded-full bg-[#a77a3f] px-8 py-4 text-center text-sm font-bold text-white">
+                メールでお問い合わせ
               </Link>
             </div>
           </div>

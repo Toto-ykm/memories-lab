@@ -18,8 +18,8 @@ export function Header() {
             お問い合わせ
           </Link>
         </nav>
-        <Link href={site.lineUrl} className="rounded-full border border-[#a77a3f] px-4 py-2 text-xs font-bold text-[#a77a3f] lg:hidden">
-          LINE相談
+        <Link href="/contact" className="rounded-full border border-[#a77a3f] px-4 py-2 text-xs font-bold text-[#a77a3f] lg:hidden">
+          お問い合わせ
         </Link>
       </div>
     </header>
