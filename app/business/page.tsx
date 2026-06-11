@@ -28,7 +28,7 @@ export default function BusinessPage() {
             ["卒園記念", "園名、年度、集合写真を入れたフォトパネルやコースターで、保護者にも喜ばれる記念品へ。"],
             ["周年記念", "会社ロゴや周年年数を品よく配置し、来賓や社員へ贈れる高級感ある記念品へ。"],
             ["表彰品", "受賞名、氏名、日付を入れ、棚やデスクに飾りやすいクリスタルブロックやガラス時計へ。"],
-            ["ノベルティ", "安価に見えない配布品として、ロゴ入りコースターやタンブラーをご提案します。"]
+            ["ノベルティ", "安価に見えない配布品として、ロゴ入り木製コースターやフォトパネルをご提案します。"]
           ].map(([title, text]) => (
             <article key={title} className="rounded-lg border border-[#d8bf83]/45 bg-[#fffaf0] p-7 shadow-soft">
               <h2 className="font-serif text-2xl font-semibold text-[#352c23]">{title}</h2>

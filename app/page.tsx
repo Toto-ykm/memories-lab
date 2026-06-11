@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { CTA } from "@/components/CTA";
+import { HeroProductSlider } from "@/components/HeroProductSlider";
 import { ProductImage } from "@/components/ProductImage";
 import { StructuredData } from "@/components/StructuredData";
 import { faqItems, giftScenes, products, site, works } from "@/lib/site";
 
-const ranking = ["glass-clock", "crystal-block", "glass-photo-frame", "tumbler"];
+const ranking = ["glass-clock", "crystal-block", "glass-photo-frame", "photo-panel"];
 
 const flow = [
   ["01", "商品を選ぶ", "用途や価格帯から、候補商品を確認します。"],
@@ -27,7 +28,6 @@ export default function Home() {
     url: site.url,
     description: site.description
   };
-  const heroProduct = products.find((product) => product.slug === "crystal-block")!;
 
   return (
     <main>
@@ -59,7 +59,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <ProductImage product={heroProduct} label="SIGNATURE GIFT" className="aspect-[4/5]" />
+          <HeroProductSlider />
         </div>
       </section>
 

@@ -37,18 +37,18 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    slug: "mug",
-    name: "マグカップ",
-    tier: "Entry",
-    price: "1,980円〜",
-    size: "約300ml",
-    delivery: "デザイン確定後 7〜14日",
-    image: "/images/products/mug-mockup.png",
-    visual: "drinkware",
-    summary: "毎日の朝食やティータイムに、家族の写真と名前を自然に添えられるパーソナルギフトです。",
-    features: ["写真・名前・短いメッセージに対応", "日常使いしやすい容量", "祖父母や職場への小さな贈り物に最適"],
-    uses: ["誕生日", "母の日", "父の日", "ちょっとしたお礼"],
-    caseText: "お孫さまの笑顔と手書き風メッセージを入れ、祖母への誕生日ギフトとして制作。毎朝使える記念品として喜ばれました。"
+    slug: "glass-clock",
+    name: "ガラス時計",
+    tier: "Premium",
+    price: "9,800円〜",
+    size: "約180mm × 150mm",
+    delivery: "デザイン確定後 12〜20日",
+    image: "/images/products/glass-clock-premium.png",
+    visual: "glass",
+    summary: "時を刻む時計に家族の記憶を重ねる、実用性と記念性を両立した上位ギフトです。",
+    features: ["リビングや応接室になじむ上品な佇まい", "写真・記念日・名前入れに対応", "退職祝い・法人記念品にも人気"],
+    uses: ["敬老の日", "退職祝い", "新築祝い", "法人記念品"],
+    caseText: "退職祝いとして、ご家族の写真と感謝の言葉を入れたガラス時計を制作。職場からの贈り物として選ばれました。"
   },
   {
     slug: "crystal-block",
@@ -57,7 +57,7 @@ export const products: Product[] = [
     price: "5,800円〜",
     size: "約80mm × 60mm × 20mm",
     delivery: "デザイン確定後 10〜18日",
-    image: "/images/products/crystal-block-mockup.png",
+    image: "/images/products/crystal-block-premium.png",
     visual: "crystal",
     summary: "透明感と重厚感を兼ね備えた、節目の贈り物にふさわしいプレミアム記念品です。",
     features: ["飾る場所を選ばない上品な透明感", "名前・日付・メッセージ刻印に対応", "法人表彰や周年記念にも対応"],
@@ -65,58 +65,18 @@ export const products: Product[] = [
     caseText: "三世代の家族写真を使用し、祖父母の金婚式祝いとして制作。リビングに長く飾れる記念品になりました。"
   },
   {
-    slug: "glass-clock",
-    name: "ガラス時計",
-    tier: "Premium",
-    price: "12,800円〜",
-    size: "約180mm × 150mm",
-    delivery: "デザイン確定後 12〜20日",
-    image: "/images/products/glass-clock-mockup.png",
-    visual: "glass",
-    summary: "時を刻む時計に家族の記憶を重ねる、実用性と記念性を両立した上位ギフトです。",
-    features: ["リビングや応接室になじむ上品な佇まい", "写真・記念日・名前入れに対応", "退職祝い・法人記念品にも人気"],
-    uses: ["敬老の日", "退職祝い", "新築祝い", "法人記念品"],
-    caseText: "退職祝いとして、ご家族の写真と感謝の言葉を入れたガラス時計を制作。職場からの贈り物として選ばれました。"
-  },
-  {
     slug: "glass-photo-frame",
     name: "ガラスフォトフレーム",
     tier: "Premium",
-    price: "6,800円〜",
+    price: "5,800円〜",
     size: "L判写真対応 / 約190mm × 145mm",
     delivery: "デザイン確定後 10〜18日",
-    image: "/images/products/glass-photo-frame-mockup.png",
+    image: "/images/products/glass-frame-premium.png",
     visual: "glass",
     summary: "写真を主役にしながら、百貨店ギフトのような品格を添えるガラス製フォトフレームです。",
     features: ["写真が映える透明感のある素材", "命名・記念日・短文メッセージに対応", "ギフト包装前提の見せ方"],
     uses: ["出産祝い", "結婚記念日", "母の日", "敬老の日"],
     caseText: "赤ちゃんの写真と命名情報を添え、出産祝いとして制作。両家の祖父母にも共有しやすい記念品になりました。"
-  },
-  {
-    slug: "wooden-coaster",
-    name: "木製コースター",
-    tier: "Entry",
-    price: "680円〜",
-    size: "約90mm × 90mm",
-    delivery: "デザイン確定後 7〜14日",
-    visual: "coaster",
-    summary: "温かみのある木目に名前やロゴを添えられる、配布用にも上品な小型ギフトです。",
-    features: ["木目を生かした自然な仕上がり", "複数名への配布に向く価格帯", "園名・年度・ロゴ入れに対応"],
-    uses: ["卒園卒業記念", "法人ノベルティ", "新築祝い", "プチギフト"],
-    caseText: "卒園記念として園名と年度を入れ、保護者配布用に制作。価格を抑えつつ記念性を保てる品として選ばれました。"
-  },
-  {
-    slug: "rubber-coaster",
-    name: "ラバーコースター",
-    tier: "Entry",
-    price: "480円〜",
-    size: "約90mm × 90mm",
-    delivery: "デザイン確定後 7〜14日",
-    visual: "coaster",
-    summary: "写真やロゴを鮮やかに表現しやすい、イベント配布や法人ノベルティ向けの実用ギフトです。",
-    features: ["写真・ロゴの再現性に優れる", "大量注文に向く仕様", "水まわりでも使いやすい素材"],
-    uses: ["法人ノベルティ", "卒園卒業記念", "周年記念", "イベント配布"],
-    caseText: "周年イベントの来場記念品としてロゴ入りで制作。安価に見えない配色と包装でブランド感を整えました。"
   },
   {
     slug: "photo-panel",
@@ -125,6 +85,7 @@ export const products: Product[] = [
     price: "5,980円〜",
     size: "A5 / A4相当から選択",
     delivery: "デザイン確定後 8〜16日",
+    image: "/images/products/photo-panel-premium.png",
     visual: "panel",
     summary: "家族写真や成長記録をインテリアとして飾りやすく整える、人気の定番ギフトです。",
     features: ["複数写真のレイアウトに対応", "軽量で飾りやすい", "子どもの成長記録に向く"],
@@ -132,57 +93,74 @@ export const products: Product[] = [
     caseText: "1歳までの成長写真をまとめ、祖父母へのプレゼントとして制作。写真を選ぶ時間も家族の思い出になりました。"
   },
   {
-    slug: "tumbler",
-    name: "タンブラー",
-    tier: "Standard",
-    price: "2,980円〜",
-    size: "約350ml",
+    slug: "mug",
+    name: "マグカップ",
+    tier: "Entry",
+    price: "1,980円〜",
+    size: "約300ml",
     delivery: "デザイン確定後 7〜14日",
-    image: "/images/products/tumbler-mockup.png",
+    image: "/images/products/mug-premium.png",
     visual: "drinkware",
-    summary: "毎日使える実用性に、名前や家族の記憶を添える大人向けのパーソナルギフトです。",
-    features: ["日常使いしやすい容量", "名前・短文メッセージに対応", "ペアギフトや法人ギフトにも対応"],
-    uses: ["父の日", "退職祝い", "法人記念品", "誕生日"],
-    caseText: "父の日に、お子さまの名前と感謝の一言を入れて制作。仕事場でも使いやすい落ち着いた仕上がりにしました。"
+    summary: "毎日の朝食やティータイムに、家族の写真と名前を自然に添えられるパーソナルギフトです。",
+    features: ["写真・名前・短いメッセージに対応", "日常使いしやすい容量", "祖父母や職場への小さな贈り物に最適"],
+    uses: ["誕生日", "母の日", "父の日", "ちょっとしたお礼"],
+    caseText: "お孫さまの笑顔と手書き風メッセージを入れ、祖母への誕生日ギフトとして制作。毎朝使える記念品として喜ばれました。"
+  },
+  {
+    slug: "wooden-coaster",
+    name: "木製コースター",
+    tier: "Entry",
+    price: "680円〜",
+    size: "約90mm × 90mm",
+    delivery: "デザイン確定後 7〜14日",
+    image: "/images/products/wood-coaster-premium.png",
+    visual: "coaster",
+    summary: "温かみのある木目に名前やロゴを添えられる、配布用にも上品な小型ギフトです。",
+    features: ["木目を生かした自然な仕上がり", "複数名への配布に向く価格帯", "園名・年度・ロゴ入れに対応"],
+    uses: ["卒園卒業記念", "法人ノベルティ", "新築祝い", "プチギフト"],
+    caseText: "卒園記念として園名と年度を入れ、保護者配布用に制作。価格を抑えつつ記念性を保てる品として選ばれました。"
   },
   {
     slug: "keiro-gift-set",
     name: "敬老の日ギフトセット",
     tier: "Gift Set",
-    price: "9,800円〜",
-    size: "商品組み合わせにより変動",
+    price: "12,000円〜",
+    size: "ガラス時計 / ガラスフォトフレーム / クリスタルブロック",
     delivery: "デザイン確定後 12〜20日",
+    image: "/images/products/keiro-gift-set-premium.png",
     visual: "crystal",
-    summary: "お孫さまの写真を中心に、飾るギフトと使えるギフトを組み合わせた敬老の日専用セットです。",
-    features: ["祖父母向けの文面提案付き", "写真選びの相談に対応", "複数世帯への配送相談可"],
+    summary: "お孫さまとの思い出をいつでも身近に感じられる、人気商品の組み合わせセットです。",
+    features: ["ガラス時計", "ガラスフォトフレーム", "クリスタルブロック"],
     uses: ["敬老の日", "還暦祝い", "古希祝い", "家族記念日"],
-    caseText: "クリスタルブロックとマグカップを組み合わせ、祖父母それぞれへ贈るセットとして制作しました。"
+    caseText: "ガラス時計、ガラスフォトフレーム、クリスタルブロックを組み合わせ、祖父母の暮らしに長く残るギフトセットとして制作しました。"
   },
   {
     slug: "baby-gift-set",
     name: "出産祝いセット",
     tier: "Gift Set",
-    price: "8,800円〜",
-    size: "商品組み合わせにより変動",
+    price: "7,980円〜",
+    size: "ガラスフォトフレーム / クリスタルブロック",
     delivery: "デザイン確定後 12〜20日",
+    image: "/images/products/baby-gift-set-premium.png",
     visual: "glass",
-    summary: "命名記念、誕生日、はじめての写真を美しく残す、出産祝い向けの上質なセットです。",
-    features: ["命名情報のレイアウト相談に対応", "両家祖父母への贈答にも対応", "写真補正と文面調整を含む"],
+    summary: "誕生の瞬間を美しく残し、ご家族の新しい思い出を形にする人気セットです。",
+    features: ["ガラスフォトフレーム", "クリスタルブロック"],
     uses: ["出産祝い", "命名記念", "内祝い", "ベビーギフト"],
-    caseText: "ガラスフォトフレームとフォトパネルを組み合わせ、出産祝いと内祝いを兼ねた記念品として制作しました。"
+    caseText: "ガラスフォトフレームとクリスタルブロックを組み合わせ、命名記念と出産祝いを兼ねた上質なセットとして制作しました。"
   },
   {
     slug: "anniversary-gift",
     name: "結婚記念品",
     tier: "Gift Set",
-    price: "12,800円〜",
-    size: "商品組み合わせにより変動",
+    price: "18,000円〜",
+    size: "ガラス時計 / ガラスフォトフレーム / クリスタルブロック / フォトパネル",
     delivery: "デザイン確定後 12〜20日",
+    image: "/images/products/anniversary-gift-set-premium.png",
     visual: "glass",
-    summary: "夫婦の歩みと家族の時間を、節目にふさわしい上質な記念品として形にします。",
-    features: ["記念年数や日付入れに対応", "夫婦・家族写真の構成提案", "両親への結婚記念日ギフトにも人気"],
+    summary: "夫婦の歩みと家族の時間を上質な記念品として残す、プレミアムギフトセットです。",
+    features: ["ガラス時計", "ガラスフォトフレーム", "クリスタルブロック", "フォトパネル"],
     uses: ["結婚記念日", "金婚式", "銀婚式", "両親への贈り物"],
-    caseText: "ご両親の結婚40周年に、家族写真と子どもたちからのメッセージを添えて制作しました。"
+    caseText: "ガラス時計、ガラスフォトフレーム、クリスタルブロック、フォトパネルを組み合わせ、ご両親の結婚記念日に贈るプレミアムセットとして制作しました。"
   }
 ];
 
@@ -199,7 +177,7 @@ export type ProductDetail = {
 };
 
 const detailBase = (product: Product): ProductDetail => ({
-  merit: `${product.name}は、写真をただ印刷するのではなく、贈る相手の暮らしに自然になじむ記念品として設計しています。価格だけで選ばれる量販品ではなく、素材感、余白、文字量、写真の見え方まで整えることで、受け取った瞬間に「きちんと選んでくれた」と伝わるギフトになります。`,
+  merit: `${product.name}は、写真をただ印刷するのではなく、贈る相手の暮らしに自然になじむ記念品として設計しています。素材感、余白、文字量、写真の見え方まで整えることで、受け取った瞬間に「きちんと選んでくれた」と伝わるギフトになります。`,
   emotional: `大切なのは、ものそのものよりも、そこに込められた時間です。${product.name}は、家族の笑顔や人生の節目を、毎日見返せる形に変えるための一品です。`,
   giftDemand: `${product.uses.join("、")}など、想いを丁寧に届けたい場面で選ばれています。`,
   target: "家族への贈り物をきちんと選びたい方、祖父母やご両親へ記念性のあるギフトを贈りたい方、法人の記念品を上品に整えたい方におすすめです。",
@@ -218,15 +196,9 @@ export const productDetails: Record<string, ProductDetail> = Object.fromEntries(
   products.map((product) => [product.slug, detailBase(product)])
 ) as Record<string, ProductDetail>;
 
-productDetails["crystal-block"] = {
-  ...detailBase(products.find((p) => p.slug === "crystal-block")!),
-  target: "祖父母、ご両親、表彰対象者、節目の記念を長く飾ってほしい相手におすすめです。",
-  voice: "ずっしりとした重みがあり、家族写真が特別な記念品になりました。リビングに飾っても上品です。"
-};
-
 productDetails["glass-clock"] = {
   ...detailBase(products.find((p) => p.slug === "glass-clock")!),
-  target: "退職祝い、新築祝い、法人記念品など、実用性と格式の両方を求める方におすすめです。",
+  target: "退職祝い、新築祝い、敬老の日、法人記念品など、実用性と格式の両方を求める方におすすめです。",
   voice: "時計として使えるので飾りっぱなしにならず、毎日目に入る記念品になりました。"
 };
 
@@ -242,7 +214,7 @@ export const giftScenes = [
     title: "出産祝い",
     keywords: "出産祝い ベビーギフト 命名記念",
     description: "赤ちゃんの誕生を、命名記念や家族写真とともに上品に残すギフト提案です。",
-    recommended: ["baby-gift-set", "glass-photo-frame", "photo-panel"],
+    recommended: ["baby-gift-set", "glass-photo-frame", "crystal-block"],
     voice: "命名情報まで美しく入って、出産祝いとして特別感がありました。"
   },
   {
@@ -258,7 +230,7 @@ export const giftScenes = [
     title: "結婚記念日",
     keywords: "結婚記念日 夫婦記念 家族の思い出",
     description: "夫婦の歩みと家族の時間を、節目にふさわしい記念品として形にします。",
-    recommended: ["anniversary-gift", "glass-clock", "crystal-block"],
+    recommended: ["anniversary-gift", "glass-clock", "glass-photo-frame"],
     voice: "派手すぎず、でも特別感があり、両親の記念日にぴったりでした。"
   },
   {
@@ -266,7 +238,7 @@ export const giftScenes = [
     title: "退職祝い",
     keywords: "退職祝い 記念品 写真入りギフト",
     description: "感謝と労いの気持ちを、職場にも自宅にも飾りやすい記念品として届けます。",
-    recommended: ["glass-clock", "crystal-block", "tumbler"],
+    recommended: ["glass-clock", "crystal-block", "mug"],
     voice: "職場一同からの贈り物として、きちんと感があり安心して渡せました。"
   },
   {
@@ -298,7 +270,7 @@ export const giftScenes = [
     title: "卒園卒業記念品",
     keywords: "卒園記念品 卒業記念 写真入り記念品",
     description: "園や学校で過ごした時間を、先生・保護者・子どもたちの記念に残します。",
-    recommended: ["photo-panel", "wooden-coaster", "rubber-coaster"],
+    recommended: ["photo-panel", "wooden-coaster", "mug"],
     voice: "保護者会で配りやすく、写真もきれいに残せて満足でした。"
   }
 ];
@@ -337,11 +309,11 @@ export const sceneArticles: Record<string, SceneArticle> = Object.fromEntries(
     {
       why: [
         `${scene.title}で喜ばれるギフトは、単に実用品であることよりも、贈る相手との関係やその日までの時間が伝わることが大切です。写真入りのオーダーメイドギフトは、家族の笑顔、名前、記念日、短いメッセージを一つにまとめられるため、既製品では伝わりにくい気持ちを自然に届けられます。`,
-        `Memories Labでは、写真を大きく入れるだけではなく、余白、文字量、素材感、飾る場所まで考えてデザインします。高級ホテルや百貨店ギフト売場のような落ち着いた印象を大切にし、安価なオーダーグッズに見えない仕上がりを目指します。`
+        "Memories Labでは、写真を大きく入れるだけではなく、余白、文字量、素材感、飾る場所まで考えてデザインします。高級ホテルや百貨店ギフト売場のような落ち着いた印象を大切にし、安価なオーダーグッズに見えない仕上がりを目指します。"
       ],
       howToChoose: [
-        `まずは、相手が「飾るもの」を喜ぶか、「使えるもの」を喜ぶかを考えると選びやすくなります。特別感を重視するならクリスタルやガラス、日常で使ってほしいならマグカップやタンブラー、複数人へ配るならコースターやフォトパネルが向いています。`,
-        `写真は、表情がはっきりしているもの、背景が明るいもの、贈る相手とのつながりが伝わるものを選ぶと仕上がりが良くなります。文字は短く整えるほど上品に見えます。`
+        "まずは、相手が飾るものを喜ぶか、使えるものを喜ぶかを考えると選びやすくなります。特別感を重視するならクリスタルやガラス、日常で使ってほしいならマグカップ、複数人へ配るなら木製コースターやフォトパネルが向いています。",
+        "写真は、表情がはっきりしているもの、背景が明るいもの、贈る相手とのつながりが伝わるものを選ぶと仕上がりが良くなります。文字は短く整えるほど上品に見えます。"
       ],
       avoidMistakes: [
         "写真や文字を詰め込みすぎると、記念品ではなく販促品のように見えてしまうことがあります。主役の写真を決め、名前や日付は控えめに添えるのがおすすめです。",

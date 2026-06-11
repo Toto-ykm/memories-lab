@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/products/crystal-block-mockup.png",
+        url: "/images/products/crystal-block-premium.png",
         width: 1200,
         height: 1200,
         alt: "Memories Labの高級オーダーメイド家族ギフト"

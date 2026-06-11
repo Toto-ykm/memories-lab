@@ -7,7 +7,7 @@ import { products } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "商品一覧",
-  description: "Memories Labの商品一覧。クリスタルブロック、ガラス時計、ガラスフォトフレーム、マグカップ、タンブラー、ギフトセットまでご覧いただけます。",
+  description: "Memories Labの商品一覧。クリスタルブロック、ガラス時計、ガラスフォトフレーム、フォトパネル、マグカップ、木製コースター、ギフトセットまでご覧いただけます。",
   openGraph: {
     title: "商品一覧 | Memories Lab",
     description: "高級オーダーメイド家族ギフトの商品一覧です。"
