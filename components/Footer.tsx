@@ -27,7 +27,6 @@ export function Footer() {
               <Link href="/quality">品質保証</Link>
               <Link href="/delivery">納期について</Link>
               <Link href="/photo-guide">写真提出ガイド</Link>
-              <Link href="/company">会社概要</Link>
             </div>
           </div>
           <div>

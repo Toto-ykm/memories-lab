@@ -15,7 +15,6 @@ export const navItems = [
   { label: "ギフトシーン", href: "/gift-scenes" },
   { label: "初めての方へ", href: "/first-time" },
   { label: "法人向け", href: "/business" },
-  { label: "制作事例", href: "/works" },
   { label: "ご利用ガイド", href: "/guide" },
   { label: "FAQ", href: "/faq" }
 ];
@@ -273,16 +272,6 @@ export const giftScenes = [
     recommended: ["photo-panel", "wooden-coaster", "mug"],
     voice: "保護者会で配りやすく、写真もきれいに残せて満足でした。"
   }
-];
-
-export const workCategories = ["出産祝い", "敬老の日", "結婚記念日", "卒園記念", "法人記念品"];
-
-export const works = [
-  { category: "出産祝い", title: "命名記念のガラスフォトフレーム", product: "ガラスフォトフレーム" },
-  { category: "敬老の日", title: "孫の写真を飾るクリスタルブロック", product: "クリスタルブロック" },
-  { category: "結婚記念日", title: "夫婦の歩みを刻むガラス時計", product: "ガラス時計" },
-  { category: "卒園記念", title: "集合写真を使ったフォトパネル", product: "フォトパネル" },
-  { category: "法人記念品", title: "周年記念ロゴ入りクリスタルブロック", product: "クリスタルブロック" }
 ];
 
 export const faqItems: [string, string][] = [

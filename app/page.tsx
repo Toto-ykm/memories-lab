@@ -3,7 +3,7 @@ import { CTA } from "@/components/CTA";
 import { HeroProductSlider } from "@/components/HeroProductSlider";
 import { ProductImage } from "@/components/ProductImage";
 import { StructuredData } from "@/components/StructuredData";
-import { faqItems, giftScenes, products, site, works } from "@/lib/site";
+import { faqItems, giftScenes, products, site } from "@/lib/site";
 
 const ranking = ["glass-clock", "crystal-block", "glass-photo-frame", "photo-panel"];
 
@@ -145,31 +145,13 @@ export default function Home() {
       </section>
 
       <section className="px-5 py-20 sm:px-8 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-bold tracking-[0.24em] text-[#a77a3f]">QUALITY</p>
-            <h2 className="mt-4 font-serif text-3xl font-semibold text-[#352c23] sm:text-5xl">品質へのこだわり</h2>
-            <div className="mt-8 grid gap-5">
-              {promises.map((text) => (
-                <div key={text} className="rounded-lg border border-[#d8bf83]/45 bg-[#fffaf0] p-6 shadow-soft">
-                  <p className="leading-8 text-[#584735]">{text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="rounded-lg bg-[#fffaf0] p-8 shadow-soft">
-            <p className="text-sm font-bold tracking-[0.24em] text-[#a77a3f]">WORKS</p>
-            <h2 className="mt-4 font-serif text-3xl font-semibold text-[#352c23]">制作事例</h2>
-            <div className="mt-8 space-y-4">
-              {works.map((work, index) => (
-                <Link href="/works" key={work.title} className="block rounded-lg border border-[#d8bf83]/45 bg-white/60 p-5">
-                  <p className="text-sm font-bold text-[#a77a3f]">Case {String(index + 1).padStart(2, "0")}</p>
-                  <p className="mt-2 font-serif text-xl leading-8 text-[#352c23]">{work.title}</p>
-                  <p className="mt-2 text-sm text-[#584735]">{work.product}</p>
-                </Link>
-              ))}
-            </div>
-          </div>
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-3">
+          {promises.map((text) => (
+            <article key={text} className="rounded-lg border border-[#d8bf83]/45 bg-[#fffaf0] p-7 shadow-soft">
+              <p className="text-sm font-bold tracking-[0.24em] text-[#a77a3f]">QUALITY</p>
+              <p className="mt-4 leading-8 text-[#584735]">{text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
