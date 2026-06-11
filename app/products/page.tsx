@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Memories Labの商品一覧。クリスタルグラス、ガラス時計、クリスタルブロック、ガラスフォトフレーム、ビールジョッキ、ギフトセットまでご覧いただけます。",
   openGraph: {
     title: "商品一覧 | Memories Lab",
-    description: "高級オーダーメイド家族ギフトの商品一覧です。"
+    description: "オーダーメイド家族ギフトの商品一覧です。"
   }
 };
 

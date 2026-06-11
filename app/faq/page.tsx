@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "納期、送料、写真サイズ、修正回数、支払い方法、返品、キャンセルなどのよくあるご質問。",
   openGraph: {
     title: "FAQ | Memories Lab",
-    description: "高級オーダーメイド家族ギフトの注文前によくある質問をまとめました。"
+    description: "オーダーメイド家族ギフトの注文前によくある質問をまとめました。"
   }
 };
 

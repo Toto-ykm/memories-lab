@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Memories Labの注文方法、写真提出方法、制作フロー、発送までの流れをご案内します。",
   openGraph: {
     title: "ご利用ガイド | Memories Lab",
-    description: "高級オーダーメイド家族ギフトのご相談からお届けまでの流れをご案内します。"
+    description: "オーダーメイド家族ギフトのご相談からお届けまでの流れをご案内します。"
   }
 };
 

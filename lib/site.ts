@@ -3,7 +3,7 @@ export const site = {
   tagline: "大切な瞬間を、未来へ残す。",
   url: "https://memories-lab.example.com",
   description:
-    "子どもの成長、家族の笑顔、人生の節目を、世界にひとつだけの高級オーダーメイドギフトとして残すブランドです。",
+    "子どもの成長、家族の笑顔、人生の節目を、世界にひとつだけのオーダーメイド家族ギフトとして残すブランドです。",
   mailUrl:
     "mailto:info@lifecraft-lab.com?subject=Memories%20Lab%E3%81%B8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87",
   email: "info@lifecraft-lab.com"

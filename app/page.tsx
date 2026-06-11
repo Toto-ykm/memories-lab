@@ -41,7 +41,7 @@ export default function Home() {
               大切な瞬間を、未来へ残す。
             </p>
             <p className="mt-7 max-w-2xl text-base leading-9 text-white/86 sm:text-lg">
-              子どもの成長、家族の笑顔、人生の節目を、世界にひとつだけの高級オーダーメイドギフトとして仕立てます。安価なグッズではなく、贈る相手の暮らしに長く残る百貨店品質の記念品へ。
+              子どもの成長、家族の笑顔、人生の節目を、世界にひとつだけのオーダーメイド家族ギフトとして仕立てます。安価なグッズではなく、贈る相手の暮らしに長く残る百貨店品質の記念品へ。
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Link href="/products" className="inline-flex items-center justify-center rounded-full bg-[#d8bf83] px-8 py-4 text-sm font-bold text-[#211914] shadow-soft transition hover:bg-[#efd79a]">

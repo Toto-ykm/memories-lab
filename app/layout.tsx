@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Memories Lab | 高級オーダーメイド家族ギフト",
+    default: "Memories Lab | オーダーメイド家族ギフト",
     template: "%s | Memories Lab"
   },
   description: site.description,
@@ -34,13 +34,13 @@ export const metadata: Metadata = {
         url: "/images/products/crystal-block-premium.png",
         width: 1200,
         height: 1200,
-        alt: "Memories Labの高級オーダーメイド家族ギフト"
+        alt: "Memories Labのオーダーメイド家族ギフト"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Memories Lab | 高級オーダーメイド家族ギフト",
+    title: "Memories Lab | オーダーメイド家族ギフト",
     description: site.description
   }
 };

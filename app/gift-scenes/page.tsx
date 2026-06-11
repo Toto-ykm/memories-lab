@@ -6,7 +6,7 @@ import { giftScenes } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "ギフトシーン",
-  description: "出産祝い、敬老の日、結婚記念日、退職祝い、新築祝い、還暦祝い、法人記念品、卒園卒業記念品におすすめの高級オーダーメイドギフト。",
+  description: "出産祝い、敬老の日、結婚記念日、退職祝い、新築祝い、還暦祝い、法人記念品、卒園卒業記念品におすすめのオーダーメイド家族ギフト。",
   openGraph: {
     title: "ギフトシーン | Memories Lab",
     description: "贈る目的別に、上質なオーダーメイド家族ギフトをご提案します。"

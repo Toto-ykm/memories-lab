@@ -21,7 +21,7 @@ export async function generateMetadata({
   if (!scene) return {};
   return {
     title: scene.title,
-    description: `${scene.title}におすすめの高級オーダーメイド家族ギフト。${scene.keywords}`,
+    description: `${scene.title}におすすめのオーダーメイド家族ギフト。${scene.keywords}`,
     keywords: scene.keywords.split(" "),
     openGraph: {
       title: `${scene.title} | Memories Lab`,
@@ -44,7 +44,7 @@ export default async function GiftScenePage({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: `${scene.title}におすすめの高級オーダーメイドギフト`,
+    headline: `${scene.title}におすすめのオーダーメイド家族ギフト`,
     description: scene.description,
     keywords: scene.keywords,
     author: { "@type": "Organization", name: site.name }

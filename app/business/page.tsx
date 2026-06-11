@@ -5,7 +5,7 @@ import { PageHero } from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "法人向け記念品",
-  description: "卒園記念、周年記念、表彰品、ノベルティ向けの高級オーダーメイド記念品をご提案します。",
+  description: "卒園記念、周年記念、表彰品、ノベルティ向けのオーダーメイド記念品をご提案します。",
   openGraph: {
     title: "法人向け記念品 | Memories Lab",
     description: "法人・団体向けに品格ある記念品を小ロットからご提案します。"
