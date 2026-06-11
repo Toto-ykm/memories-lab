@@ -35,7 +35,7 @@ export default function Home() {
       <section className="bg-[#211914] px-5 py-12 text-white sm:px-8 lg:py-20">
         <div className="mx-auto grid min-h-[76vh] max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
-            <p className="mb-6 text-xs font-semibold uppercase tracking-[0.38em] text-[#f0d99d]">Luxury custom family gifts</p>
+            <p className="mb-6 text-xs font-semibold uppercase tracking-[0.38em] text-[#f0d99d]">Custom family gifts</p>
             <h1 className="font-serif text-5xl font-semibold leading-[1.05] sm:text-7xl lg:text-8xl">Memories Lab</h1>
             <p className="mt-6 font-serif text-2xl font-medium leading-relaxed text-[#fff4d8] sm:text-4xl">
               大切な瞬間を、未来へ残す。
