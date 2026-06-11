@@ -6,8 +6,8 @@ export const site = {
     "子どもの成長、家族の笑顔、人生の節目を、世界にひとつだけの高級オーダーメイドギフトとして残すブランドです。",
   lineUrl: "https://line.me/R/ti/p/@memorieslab",
   mailUrl:
-    "mailto:hello@memories-lab.example.com?subject=Memories%20Lab%E3%81%B8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87",
-  email: "hello@memories-lab.example.com"
+    "mailto:info@lifecraft-lab.com?subject=Memories%20Lab%E3%81%B8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87",
+  email: "info@lifecraft-lab.com"
 };
 
 export const navItems = [
@@ -26,12 +26,15 @@ export type Product = {
   price: string;
   size: string;
   delivery: string;
-  image?: string;
+  image: string;
   visual: "crystal" | "glass" | "panel" | "drinkware" | "coaster";
   summary: string;
   features: string[];
   uses: string[];
   caseText: string;
+  specs?: [string, string][];
+  seoTitle?: string;
+  seoDescription?: string;
 };
 
 export const products: Product[] = [
@@ -39,7 +42,7 @@ export const products: Product[] = [
     slug: "glass-clock",
     name: "ガラス時計",
     tier: "Premium",
-    price: "9,800円〜",
+    price: "9,800円（税込）",
     size: "約180mm × 150mm",
     delivery: "デザイン確定後 12〜20日",
     image: "/images/products/glass-clock-premium.png",
@@ -53,7 +56,7 @@ export const products: Product[] = [
     slug: "crystal-block",
     name: "クリスタルブロック",
     tier: "Premium",
-    price: "5,800円〜",
+    price: "5,800円（税込）",
     size: "約80mm × 60mm × 20mm",
     delivery: "デザイン確定後 10〜18日",
     image: "/images/products/crystal-block-premium.png",
@@ -67,7 +70,7 @@ export const products: Product[] = [
     slug: "glass-photo-frame",
     name: "ガラスフォトフレーム",
     tier: "Premium",
-    price: "5,800円〜",
+    price: "6,980円（税込）",
     size: "L判写真対応 / 約190mm × 145mm",
     delivery: "デザイン確定後 10〜18日",
     image: "/images/products/glass-frame-premium.png",
@@ -78,10 +81,40 @@ export const products: Product[] = [
     caseText: "赤ちゃんの写真と命名情報を添え、出産祝いとして制作。両家の祖父母にも共有しやすい記念品になりました。"
   },
   {
+    slug: "crystal-glass",
+    name: "クリスタルグラス（ペアセット）",
+    tier: "Premium",
+    price: "19,600円（税込）",
+    size: "容量250ml / ペアセット",
+    delivery: "デザイン確定後 10〜18日",
+    image: "/images/products/crystal-glass-premium.png",
+    visual: "glass",
+    summary:
+      "透明感あふれるクリスタルガラスに、お気に入りの写真や名前を美しく刻むプレミアムギフト。本商品はペアセット販売です。",
+    features: ["ペアセット販売", "フルカラー写真印刷対応", "高級クリスタルガラス使用", "名入れ対応", "ギフトボックス付き", "記念品や贈答品に最適"],
+    uses: ["記念品", "ビジネスギフト", "結婚祝い", "退職祝い", "還暦祝い"],
+    caseText:
+      "ご夫婦の記念日ギフトとして、お二人の写真と名前を入れたペアグラスを制作。重厚感のある仕上がりで、節目の贈り物として選ばれました。",
+    specs: [
+      ["素材", "クリスタルガラス"],
+      ["容量", "250ml"],
+      ["スタイル", "アジア禅"],
+      ["用途", "ウイスキーグラス / ワイングラス"],
+      ["カラー", "カスタム対応"],
+      ["形状", "丸型"],
+      ["名入れ", "対応"],
+      ["包装", "ギフトボックス付属"],
+      ["原産国", "China"]
+    ],
+    seoTitle: "クリスタルグラス（ペア）｜写真入りオーダーメイドギフト | Memories Lab",
+    seoDescription:
+      "写真や名前を刻める高級クリスタルグラスペアセット。結婚祝い・還暦祝い・退職祝い・記念日の特別な贈り物に。"
+  },
+  {
     slug: "photo-panel",
     name: "フォトパネル",
     tier: "Standard",
-    price: "5,980円〜",
+    price: "5,980円（税込）",
     size: "A5 / A4相当から選択",
     delivery: "デザイン確定後 8〜16日",
     image: "/images/products/photo-panel-premium.png",
@@ -92,10 +125,40 @@ export const products: Product[] = [
     caseText: "1歳までの成長写真をまとめ、祖父母へのプレゼントとして制作。写真を選ぶ時間も家族の思い出になりました。"
   },
   {
+    slug: "beer-mug",
+    name: "ビールジョッキ",
+    tier: "Standard",
+    price: "3,980円（税込）",
+    size: "10×10×37.5cm / 約750g",
+    delivery: "デザイン確定後 7〜14日",
+    image: "/images/products/beer-mug-premium.png",
+    visual: "drinkware",
+    summary:
+      "お気に入りの写真を大きく印刷できるオリジナルビールジョッキ。実用性と特別感を兼ね備えた人気商品です。",
+    features: ["フルカラー写真印刷", "大容量サイズ", "オリジナルデザイン対応", "ギフト利用に最適", "実用品として毎日使える"],
+    uses: ["父の日", "誕生日", "退職祝い", "記念品"],
+    caseText:
+      "父の日の贈り物として、ご家族の写真を大きく配置したビールジョッキを制作。毎日の晩酌時間を思い出で彩るギフトになりました。",
+    specs: [
+      ["素材", "ガラス"],
+      ["タイプ", "ビールマグ"],
+      ["スタイル", "アメリカンスタイル"],
+      ["用途", "ビール / 炭酸飲料"],
+      ["カラー", "フルカラー印刷対応"],
+      ["ロゴ印刷", "対応"],
+      ["サイズ", "10×10×37.5cm"],
+      ["重量", "約750g"],
+      ["原産国", "Guangdong, China"]
+    ],
+    seoTitle: "ビールジョッキ｜写真入りオーダーメイドギフト | Memories Lab",
+    seoDescription:
+      "お気に入りの写真を大きく印刷できるオリジナルビールジョッキ。父の日や退職祝い、誕生日ギフトにおすすめ。"
+  },
+  {
     slug: "mug",
     name: "マグカップ",
     tier: "Entry",
-    price: "1,980円〜",
+    price: "1,980円（税込）",
     size: "約300ml",
     delivery: "デザイン確定後 7〜14日",
     image: "/images/products/mug-premium.png",
@@ -109,7 +172,7 @@ export const products: Product[] = [
     slug: "wooden-coaster",
     name: "木製コースター",
     tier: "Entry",
-    price: "680円〜",
+    price: "680円（税込）",
     size: "約90mm × 90mm",
     delivery: "デザイン確定後 7〜14日",
     image: "/images/products/wood-coaster-premium.png",
@@ -120,46 +183,116 @@ export const products: Product[] = [
     caseText: "卒園記念として園名と年度を入れ、保護者配布用に制作。価格を抑えつつ記念性を保てる品として選ばれました。"
   },
   {
-    slug: "keiro-gift-set",
-    name: "敬老の日ギフトセット",
-    tier: "Gift Set",
-    price: "12,000円〜",
-    size: "ガラス時計 / ガラスフォトフレーム / クリスタルブロック",
-    delivery: "デザイン確定後 12〜20日",
-    image: "/images/products/keiro-gift-set-premium.png",
-    visual: "crystal",
-    summary: "お孫さまとの思い出をいつでも身近に感じられる、人気商品の組み合わせセットです。",
-    features: ["ガラス時計", "ガラスフォトフレーム", "クリスタルブロック"],
-    uses: ["敬老の日", "還暦祝い", "古希祝い", "家族記念日"],
-    caseText: "ガラス時計、ガラスフォトフレーム、クリスタルブロックを組み合わせ、祖父母の暮らしに長く残るギフトセットとして制作しました。"
-  },
-  {
     slug: "baby-gift-set",
     name: "出産祝いセット",
     tier: "Gift Set",
-    price: "7,980円〜",
-    size: "ガラスフォトフレーム / クリスタルブロック",
+    price: "6,980円（税込）",
+    size: "ガラスフォトフレーム / 木製コースター",
     delivery: "デザイン確定後 12〜20日",
-    image: "/images/products/baby-gift-set-premium.png",
+    image: "/images/gift-sets/baby-gift-set.png",
     visual: "glass",
     summary: "誕生の瞬間を美しく残し、ご家族の新しい思い出を形にする人気セットです。",
-    features: ["ガラスフォトフレーム", "クリスタルブロック"],
+    features: ["ガラスフォトフレーム", "木製コースター"],
     uses: ["出産祝い", "命名記念", "内祝い", "ベビーギフト"],
-    caseText: "ガラスフォトフレームとクリスタルブロックを組み合わせ、命名記念と出産祝いを兼ねた上質なセットとして制作しました。"
+    caseText: "ガラスフォトフレームと木製コースターを組み合わせ、写真を飾る記念性と日常で使える温かさを両立しました。"
+  },
+  {
+    slug: "keiro-gift-set",
+    name: "敬老の日ギフトセット",
+    tier: "Gift Set",
+    price: "10,800円（税込）",
+    size: "ガラス時計 / 木製コースター×2",
+    delivery: "デザイン確定後 12〜20日",
+    image: "/images/gift-sets/respect-for-aged-day-set.png",
+    visual: "glass",
+    summary: "お孫さまとの思い出をいつでも身近に感じられる、人気商品の組み合わせセットです。",
+    features: ["ガラス時計", "木製コースター×2"],
+    uses: ["敬老の日", "還暦祝い", "古希祝い", "家族記念日"],
+    caseText: "ガラス時計と木製コースターを組み合わせ、飾る楽しさと日常で使える実用性を備えた敬老の日ギフトとして制作しました。"
   },
   {
     slug: "anniversary-gift",
-    name: "結婚記念品",
+    name: "結婚記念品セット",
     tier: "Gift Set",
-    price: "18,000円〜",
-    size: "ガラス時計 / ガラスフォトフレーム / クリスタルブロック / フォトパネル",
+    price: "19,800円（税込）",
+    size: "クリスタルグラスペア / 木製コースター×2",
     delivery: "デザイン確定後 12〜20日",
-    image: "/images/products/anniversary-gift-set-premium.png",
+    image: "/images/gift-sets/wedding-anniversary-set.png",
     visual: "glass",
     summary: "夫婦の歩みと家族の時間を上質な記念品として残す、プレミアムギフトセットです。",
-    features: ["ガラス時計", "ガラスフォトフレーム", "クリスタルブロック", "フォトパネル"],
+    features: ["クリスタルグラスペア", "木製コースター×2"],
     uses: ["結婚記念日", "金婚式", "銀婚式", "両親への贈り物"],
-    caseText: "ガラス時計、ガラスフォトフレーム、クリスタルブロック、フォトパネルを組み合わせ、ご両親の結婚記念日に贈るプレミアムセットとして制作しました。"
+    caseText: "クリスタルグラスペアと木製コースターを組み合わせ、夫婦で使える上質な結婚記念品として制作しました。"
+  },
+  {
+    slug: "retirement-gift-set",
+    name: "退職祝いセット",
+    tier: "Gift Set",
+    price: "10,980円（税込）",
+    size: "ガラス時計 / マグカップ",
+    delivery: "デザイン確定後 12〜20日",
+    image: "/images/gift-sets/retirement-gift-set.png",
+    visual: "glass",
+    summary: "感謝の気持ちを飾る記念品と日常で使えるギフトにまとめた、退職祝い向けセットです。",
+    features: ["ガラス時計", "マグカップ"],
+    uses: ["退職祝い", "記念品", "ビジネスギフト", "送別品"],
+    caseText: "ガラス時計に感謝の言葉を添え、マグカップを日常使いの記念品として組み合わせました。"
+  },
+  {
+    slug: "housewarming-gift-set",
+    name: "新築祝いセット",
+    tier: "Gift Set",
+    price: "12,800円（税込）",
+    size: "フォトパネル / ガラスフォトフレーム / 木製コースター",
+    delivery: "デザイン確定後 12〜20日",
+    image: "/images/gift-sets/housewarming-set.png",
+    visual: "panel",
+    summary: "新しい住まいに自然になじむ写真ギフトを組み合わせた、新築祝い向けセットです。",
+    features: ["フォトパネル", "ガラスフォトフレーム", "木製コースター"],
+    uses: ["新築祝い", "引越し祝い", "家族記念日", "インテリアギフト"],
+    caseText: "フォトパネルとガラスフォトフレームで飾る楽しさを、木製コースターで日常使いの温かさを添えました。"
+  },
+  {
+    slug: "kanreki-gift-set",
+    name: "還暦祝いセット",
+    tier: "Gift Set",
+    price: "14,800円（税込）",
+    size: "ガラス時計 / クリスタルブロック",
+    delivery: "デザイン確定後 12〜20日",
+    image: "/images/gift-sets/kanreki-set.png",
+    visual: "crystal",
+    summary: "人生の節目を、時間を刻む時計と重厚なクリスタルで残す還暦祝い向けセットです。",
+    features: ["ガラス時計", "クリスタルブロック"],
+    uses: ["還暦祝い", "長寿祝い", "家族記念日", "両親への贈り物"],
+    caseText: "家族写真を使ったガラス時計とクリスタルブロックを組み合わせ、長く飾れる還暦祝いに仕立てました。"
+  },
+  {
+    slug: "corporate-gift-set",
+    name: "法人記念品セット",
+    tier: "Gift Set",
+    price: "24,800円（税込）",
+    size: "クリスタルグラスペア / クリスタルブロック / 木製コースター",
+    delivery: "デザイン確定後 12〜20日",
+    image: "/images/gift-sets/corporate-gift-set.png",
+    visual: "crystal",
+    summary: "表彰品や周年記念にふさわしい、上質な法人向けプレミアムセットです。",
+    features: ["クリスタルグラスペア", "クリスタルブロック", "木製コースター"],
+    uses: ["法人記念品", "周年記念", "表彰品", "ビジネスギフト"],
+    caseText: "クリスタル素材を中心に、企業ロゴや記念日を品よく配置できる法人向け記念品として構成しました。"
+  },
+  {
+    slug: "graduation-memory-set",
+    name: "卒園卒業記念品セット",
+    tier: "Gift Set",
+    price: "7,480円（税込）",
+    size: "フォトパネル / マグカップ",
+    delivery: "デザイン確定後 12〜20日",
+    image: "/images/gift-sets/graduation-memory-set.png",
+    visual: "panel",
+    summary: "園や学校で過ごした時間を、飾れる写真と使える記念品で残す卒園卒業向けセットです。",
+    features: ["フォトパネル", "マグカップ"],
+    uses: ["卒園記念品", "卒業記念", "先生への贈り物", "保護者会ギフト"],
+    caseText: "集合写真をフォトパネルに、個別写真や名前をマグカップに入れ、思い出を形に残すセットとして制作しました。"
   }
 ];
 
@@ -195,18 +328,6 @@ export const productDetails: Record<string, ProductDetail> = Object.fromEntries(
   products.map((product) => [product.slug, detailBase(product)])
 ) as Record<string, ProductDetail>;
 
-productDetails["glass-clock"] = {
-  ...detailBase(products.find((p) => p.slug === "glass-clock")!),
-  target: "退職祝い、新築祝い、敬老の日、法人記念品など、実用性と格式の両方を求める方におすすめです。",
-  voice: "時計として使えるので飾りっぱなしにならず、毎日目に入る記念品になりました。"
-};
-
-productDetails["glass-photo-frame"] = {
-  ...detailBase(products.find((p) => p.slug === "glass-photo-frame")!),
-  target: "出産祝い、命名記念、結婚記念日など、写真を主役にしたい贈り物におすすめです。",
-  voice: "赤ちゃんの写真が上品に見えて、両親にも祖父母にも贈りやすい仕上がりでした。"
-};
-
 export const giftScenes = [
   {
     slug: "baby-gift",
@@ -229,7 +350,7 @@ export const giftScenes = [
     title: "結婚記念日",
     keywords: "結婚記念日 夫婦記念 家族の思い出",
     description: "夫婦の歩みと家族の時間を、節目にふさわしい記念品として形にします。",
-    recommended: ["anniversary-gift", "glass-clock", "glass-photo-frame"],
+    recommended: ["anniversary-gift", "crystal-glass", "glass-photo-frame"],
     voice: "派手すぎず、でも特別感があり、両親の記念日にぴったりでした。"
   },
   {
@@ -237,7 +358,7 @@ export const giftScenes = [
     title: "退職祝い",
     keywords: "退職祝い 記念品 写真入りギフト",
     description: "感謝と労いの気持ちを、職場にも自宅にも飾りやすい記念品として届けます。",
-    recommended: ["glass-clock", "crystal-block", "mug"],
+    recommended: ["retirement-gift-set", "glass-clock", "beer-mug"],
     voice: "職場一同からの贈り物として、きちんと感があり安心して渡せました。"
   },
   {
@@ -245,7 +366,7 @@ export const giftScenes = [
     title: "新築祝い",
     keywords: "新築祝い 家族写真 ギフト",
     description: "新しい暮らしに自然になじむ、上品な写真入りギフトを提案します。",
-    recommended: ["glass-clock", "glass-photo-frame", "photo-panel"],
+    recommended: ["housewarming-gift-set", "photo-panel", "glass-photo-frame"],
     voice: "新居の雰囲気を壊さず、家族の記念として飾れる点が良かったです。"
   },
   {
@@ -253,7 +374,7 @@ export const giftScenes = [
     title: "還暦祝い",
     keywords: "還暦祝い 家族ギフト 写真入り記念品",
     description: "人生の大きな節目を、家族の写真と感謝の言葉で品よく残します。",
-    recommended: ["crystal-block", "glass-clock", "keiro-gift-set"],
+    recommended: ["kanreki-gift-set", "crystal-block", "glass-clock"],
     voice: "赤いものにこだわりすぎず、長く飾れる記念品として喜ばれました。"
   },
   {
@@ -261,7 +382,7 @@ export const giftScenes = [
     title: "法人記念品",
     keywords: "法人記念品 卒園記念 周年記念 表彰品 ノベルティ",
     description: "周年記念、表彰品、卒園記念、ノベルティまで、安価に見えない記念品を整えます。",
-    recommended: ["crystal-block", "glass-clock", "wooden-coaster"],
+    recommended: ["corporate-gift-set", "crystal-glass", "crystal-block"],
     voice: "配布品ではなく、会社の姿勢が伝わる記念品として好評でした。"
   },
   {
@@ -269,7 +390,7 @@ export const giftScenes = [
     title: "卒園卒業記念品",
     keywords: "卒園記念品 卒業記念 写真入り記念品",
     description: "園や学校で過ごした時間を、先生・保護者・子どもたちの記念に残します。",
-    recommended: ["photo-panel", "wooden-coaster", "mug"],
+    recommended: ["graduation-memory-set", "photo-panel", "mug"],
     voice: "保護者会で配りやすく、写真もきれいに残せて満足でした。"
   }
 ];
@@ -301,7 +422,7 @@ export const sceneArticles: Record<string, SceneArticle> = Object.fromEntries(
         "Memories Labでは、写真を大きく入れるだけではなく、余白、文字量、素材感、飾る場所まで考えてデザインします。高級ホテルや百貨店ギフト売場のような落ち着いた印象を大切にし、安価なオーダーグッズに見えない仕上がりを目指します。"
       ],
       howToChoose: [
-        "まずは、相手が飾るものを喜ぶか、使えるものを喜ぶかを考えると選びやすくなります。特別感を重視するならクリスタルやガラス、日常で使ってほしいならマグカップ、複数人へ配るなら木製コースターやフォトパネルが向いています。",
+        "まずは、相手が飾るものを喜ぶか、使えるものを喜ぶかを考えると選びやすくなります。特別感を重視するならクリスタルやガラス、日常で使ってほしいならマグカップやビールジョッキ、複数人へ配るなら木製コースターやフォトパネルが向いています。",
         "写真は、表情がはっきりしているもの、背景が明るいもの、贈る相手とのつながりが伝わるものを選ぶと仕上がりが良くなります。文字は短く整えるほど上品に見えます。"
       ],
       avoidMistakes: [

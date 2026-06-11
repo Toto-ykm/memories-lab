@@ -7,6 +7,8 @@ const slides = [
   { name: "ガラス時計", src: "/images/products/glass-clock-premium.png" },
   { name: "クリスタルブロック", src: "/images/products/crystal-block-premium.png" },
   { name: "ガラスフォトフレーム", src: "/images/products/glass-frame-premium.png" },
+  { name: "クリスタルグラス（ペアセット）", src: "/images/products/crystal-glass-premium.png" },
+  { name: "ビールジョッキ", src: "/images/products/beer-mug-premium.png" },
   { name: "フォトパネル", src: "/images/products/photo-panel-premium.png" },
   { name: "マグカップ", src: "/images/products/mug-premium.png" },
   { name: "木製コースター", src: "/images/products/wood-coaster-premium.png" }
@@ -31,7 +33,7 @@ export function HeroProductSlider() {
           <Image
             key={slide.src}
             src={slide.src}
-            alt={`${slide.name}の高級商品画像`}
+            alt={`${slide.name}の商品画像`}
             fill
             priority={index === 0}
             sizes="(min-width: 1024px) 44vw, 100vw"

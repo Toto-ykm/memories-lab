@@ -5,7 +5,7 @@ import { ProductImage } from "@/components/ProductImage";
 import { StructuredData } from "@/components/StructuredData";
 import { faqItems, giftScenes, products, site } from "@/lib/site";
 
-const ranking = ["glass-clock", "crystal-block", "glass-photo-frame", "photo-panel"];
+const ranking = ["crystal-glass", "glass-clock", "glass-photo-frame", "beer-mug"];
 
 const flow = [
   ["01", "商品を選ぶ", "用途や価格帯から、候補商品を確認します。"],
@@ -89,8 +89,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm font-bold tracking-[0.24em] text-[#a77a3f]">GIFT RANKING</p>
-              <h2 className="mt-4 font-serif text-3xl font-semibold text-[#352c23] sm:text-5xl">人気ギフトランキング</h2>
+              <p className="text-sm font-bold tracking-[0.24em] text-[#a77a3f]">FEATURED GIFTS</p>
+              <h2 className="mt-4 font-serif text-3xl font-semibold text-[#352c23] sm:text-5xl">おすすめ商品</h2>
             </div>
             <Link href="/products" className="font-bold text-[#a77a3f]">すべての商品を見る</Link>
           </div>
@@ -100,7 +100,7 @@ export default function Home() {
               if (!product) return null;
               return (
                 <Link key={slug} href={`/products/${slug}`} className="rounded-lg border border-[#d8bf83]/45 bg-[#fffaf0] p-5 shadow-soft">
-                  <ProductImage product={product} label={`RANK ${index + 1}`} className="aspect-[4/3]" />
+                  <ProductImage product={product} label={`PICK ${index + 1}`} className="aspect-[4/3]" />
                   <h3 className="mt-5 font-serif text-2xl font-semibold text-[#352c23]">{product.name}</h3>
                   <p className="mt-2 font-bold text-[#a77a3f]">{product.price}</p>
                   <p className="mt-4 leading-7 text-[#584735]">{product.summary}</p>

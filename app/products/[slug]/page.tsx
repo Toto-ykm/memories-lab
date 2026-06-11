@@ -19,13 +19,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return {};
+
   return {
-    title: product.name,
-    description: `${product.name}は${product.price}。${product.summary}`,
+    title: product.seoTitle ?? product.name,
+    description: product.seoDescription ?? `${product.name}は${product.price}。${product.summary}`,
     openGraph: {
-      title: `${product.name} | Memories Lab`,
-      description: product.summary,
-      images: product.image ? [product.image] : undefined
+      title: `${product.seoTitle ?? product.name} | Memories Lab`,
+      description: product.seoDescription ?? product.summary,
+      images: [product.image]
     }
   };
 }
@@ -47,7 +48,8 @@ export default async function ProductDetailPage({
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
-    description: product.summary,
+    description: product.seoDescription ?? product.summary,
+    image: product.image,
     brand: { "@type": "Brand", name: site.name },
     offers: {
       "@type": "Offer",
@@ -154,6 +156,19 @@ export default async function ProductDetailPage({
               <p className="mt-5 leading-8 text-[#584735]">{product.caseText}</p>
             </div>
           </div>
+          {product.specs && (
+            <div className="mt-8 rounded-lg border border-[#d8bf83]/45 bg-[#fffaf0] p-7 shadow-soft">
+              <h3 className="font-serif text-2xl font-semibold text-[#352c23]">商品仕様</h3>
+              <dl className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {product.specs.map(([label, value]) => (
+                  <div key={label} className="rounded-md bg-white/70 p-4">
+                    <dt className="text-sm font-bold text-[#a77a3f]">{label}</dt>
+                    <dd className="mt-2 text-[#584735]">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          )}
         </div>
       </section>
 
